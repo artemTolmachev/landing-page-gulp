@@ -9,7 +9,8 @@
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-console.log('components');
+Object(function webpackMissingModule() { var e = new Error("Cannot find module './components/smooth-scroll'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+
 
 /***/ })
 
