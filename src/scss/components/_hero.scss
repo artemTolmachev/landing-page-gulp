@@ -1,4 +1,45 @@
 .hero{
-    min-height: 500px;
+    padding-top: 250px;
+    min-height: 800px;
     background-color: var(--dark-color);
+
+    &__container{
+        @include flex;
+    }
+    &__content{
+       max-width: 516px;
+    }
+    &__text{
+        @include flex-start;
+    }
+    &__image{
+        position: relative;
+        width: 50%;
+    }
+    &__image-pic{
+        top:0;
+        right: -10px;
+        width: 515px;
+        height: 917px;
+        position: absolute;
+    }
+    &__title{
+        margin: 0;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 160%;
+        color: #fff;
+    }
+    &__descr{
+        margin: 0;
+        margin-bottom: 50px;
+        max-width: 478px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        color: var(--light-color);
+    }
 }

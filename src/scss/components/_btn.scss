@@ -1,0 +1,38 @@
+.btn{
+    border-radius: 5px;
+    padding: 25px 53px;
+    min-width: 260px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--accent-color);
+    color: var(--light-color);
+    
+    cursor: pointer;
+    transition: var(--main-trs);
+
+
+}
+
+.btn:focus-visible{
+    outline: 2px dashed var(--accent-color);
+    outline-offset: var(--outline-offset);
+}
+
+@media (any-hover: hover){
+    .btn--theme-dark:hover{
+        color: var(--dark-primary);
+        background-color: var(--white);
+    }
+}
+
+.btn--theme-dark:active {
+    color: var(--white);
+    background-color: var(--dark-primary);
+}

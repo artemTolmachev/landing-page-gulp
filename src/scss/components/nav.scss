@@ -2,15 +2,31 @@
     &__list{
         @include flex-v-center;
     }
-
     &__item:not(:last-child){
         margin-right: 40px;
     }
-
     &__link{
         font-weight: 400;
         font-size: 20px;
         line-height: 160%;
         color: var(--light-color);
+
+        transition: var(--main-trs);
+    }
+
+}
+
+.nav{
+    &__link:focus{
+        outline: none;
+    }
+    &__link:focus-visible{
+        outline: var(--outline);
+        outline-offset: var(--outline-offset);
+    }
+    @media (any-hover: hover){
+        &__link:hover{
+          color: var(--accent-color)
+        }
     }
 }
