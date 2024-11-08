@@ -17,22 +17,25 @@
     cursor: pointer;
     transition: var(--main-trs);
 
-
-}
-
-.btn:focus-visible{
-    outline: 2px dashed var(--accent-color);
-    outline-offset: var(--outline-offset);
-}
-
-@media (any-hover: hover){
-    .btn--theme-dark:hover{
-        color: var(--dark-primary);
-        background-color: var(--white);
+    &--dark{
+        color: var(--light-color);
+        background-color: var(--dark-color);
     }
 }
 
-.btn--theme-dark:active {
-    color: var(--white);
-    background-color: var(--dark-primary);
-}
+// .btn:focus-visible{
+//     outline: 2px dashed var(--accent-color);
+//     outline-offset: var(--outline-offset);
+// }
+
+// @media (any-hover: hover){
+//     .btn--theme-dark:hover{
+//         color: var(--dark-primary);
+//         background-color: var(--white);
+//     }
+// }
+
+// .btn--theme-dark:active {
+//     color: var(--white);
+//     background-color: var(--dark-primary);
+// }

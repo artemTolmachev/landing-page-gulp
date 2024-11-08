@@ -1,0 +1,46 @@
+.order {
+  background-image: url(../../img/procents.svg);
+  background-position: bottom;
+  padding: 87px 0;
+  background-color: var(--accent-color);
+}
+.order__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+}
+.order__left {
+  padding-left: 60px;
+  -ms-grid-column-span: 5;
+  grid-column: 5 span;
+}
+.order__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 130%;
+  color: var(--light-color);
+}
+.order__descr {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: var(--light-color);
+}
+.order__right {
+  padding-right: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-grid-column-span: 7;
+  grid-column: 7 span;
+}
+.order__form {
+  max-width: 500px;
+}/*# sourceMappingURL=order.css.map */
