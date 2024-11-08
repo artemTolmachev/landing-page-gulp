@@ -5,9 +5,15 @@
 @import "settings";
 
 // подключения компонентов страницы
+@import "./components/section-title";
+@import "./components/tooltip";
 @import "./components/btn";
 @import "./components/header";
 @import "./components/hero";
 @import "./components/nav";
 @import "./components/phone";
 @import "./components/about";
+@import "./components/benefits";
+@import "./components/trainers";
+@import "./components/tariffs";
+

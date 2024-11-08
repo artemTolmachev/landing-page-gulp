@@ -1,6 +1,5 @@
 .about{
-    padding: 119px 0;
-    
+
     background-color: var(--light-color);
 
     &__descr{
@@ -16,7 +15,7 @@
     &__descr-highlight{
         font-weight: 800;
     }
-    &_list {
+    &__list {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: 40px;
