@@ -50,9 +50,12 @@
                 </a>
             </div>
         </div>
-        <!-- <div class="hero__image">
-            <img src="/img/image-1.png" alt="" class="hero__image-pic" height="918" width="515" aria-hidden="true">
-        </div> -->
+        <div class="hero__image">
+            <picture>
+              <source srcset="./img/image-1.png" type="image/webp">
+              <img loading="lazy" src="./img/image-1.png" class="hero__image-pic" height="917" width="783" alt="Девушка смотрящая в даль">
+            </picture>
+        </div>
     </div>
 </section>
       <section class="about section-offset" id="about">
@@ -278,8 +281,17 @@
 </div>
     </main>
     <footer class="footer">
-    <div class="container">
-  </div>
+    <div class="footer__container container-fluid">
+      <div class="footer__left">
+        <a href="#" class="logo footer__logo">
+          <img loading="lazy" src="../img/logo.svg" alt="Логотип ROBO SCHOOL">
+        </a>
+        <span class="footer__copirite">
+          © ROBO.SCHOOL
+        </span>
+      </div>
+      <a class="phone" href="tel:+1234567890">+1 (234) 567-890</a>
+    </div>
 </footer>
 
     <div class="graph-modal">

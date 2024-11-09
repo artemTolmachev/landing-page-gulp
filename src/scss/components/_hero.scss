@@ -4,25 +4,20 @@
     background-color: var(--dark-color);
 
     &__container{
-        @include flex;
+        @include flex-v-center;
     }
     &__content{
+        flex-shrink: 0;
        max-width: 516px;
     }
     &__text{
         @include flex-start;
     }
     &__image{
-        position: relative;
-        width: 50%;
+        max-width: 783px;
+        transform: translateX(167px);
     }
-    &__image-pic{
-        top:0;
-        right: -10px;
-        width: 515px;
-        height: 917px;
-        position: absolute;
-    }
+
     &__title{
         margin: 0;
         margin-bottom: 50px;
