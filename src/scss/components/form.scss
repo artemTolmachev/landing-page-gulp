@@ -4,8 +4,14 @@
     width: 100%;
 
     &__label {
+        display: flex;
+        flex-direction: column-reverse;
         width: 100%;
         margin-bottom: 10px;
+    }
+    .just-validate-error-label{
+        margin-bottom: 3px;
+        color: rgb(255, 255, 255) !important;
     }
     &__input {
         padding-left: 20px;

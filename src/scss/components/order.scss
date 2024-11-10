@@ -1,7 +1,8 @@
 .order{
     // в этом случае лучше использовать svg и вставлять без мексина (но для примера как работает этот мексин с png )
     background-image: url(../../img/procents.svg);
-    background-position: bottom;
+    background-position: bottom center;
+    background-size: cover;
     padding: 87px 0;
     background-color: var(--accent-color);
 
