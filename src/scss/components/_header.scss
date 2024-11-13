@@ -8,5 +8,26 @@
 
     &__container{
         @include flex-all-sb;
+
+        @include high-tablet{
+            justify-content: initial;
+            align-items: center;
+        }
+    }
+    &__phone{
+        @include high-tablet{
+        margin-right: 10px;
+        margin-left: auto;
+        font-size: 0px;
+        position: relative;
+        width: 44px;
+        height: 44px;
+        border: 2px solid rgba(255, 255, 255, 0.08);
+        border-radius: 10px;
+        background-image: url("../../img/call.svg");
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        }
     }
 }

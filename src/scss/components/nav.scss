@@ -1,10 +1,22 @@
 .nav{
     &__list{
-      display: flex;
-      align-items: center;
+      @include flex-v-center;
+
+      @include high-tablet {
+        @include flex-all-center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+      }
+
     }
     &__item:not(:last-child){
         margin-right: 40px;
+
+        @include high-tablet {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
     }
     &__link{
         font-weight: 400;
@@ -12,9 +24,13 @@
         line-height: 160%;
         color: var(--light-color);
         transition: var(--main-trs);
+
+        @include high-tablet {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 160%;
+        }
     }
-}
-.nav{
     &__link:focus{
         outline: none;
     }
@@ -27,4 +43,14 @@
           color: var(--accent-color)
         }
     }
+    @include high-tablet {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        overflow-y: auto;
+        background-color: var(--dark-color);
+    }
 }
+

@@ -9,6 +9,10 @@
     max-height: 500px;
 
     border-radius: 20px;
+    
+    @include small-tablet{
+      max-height: 300px;
+    }
   }
   &__name {
     margin: 0;
@@ -17,6 +21,10 @@
     font-size: 24px;
     line-height: 160%;
     color: var(--dark-color);
+
+    @include small-tablet {
+      font-size: 20px;
+    }
   }
   &__post {
     margin: 0;
@@ -38,7 +46,6 @@
    width: 360px;
   }
   &__scroll{
-    // width: 360px;
     height: 5px;
     border-radius: 40px;
     background-color: rgba(20, 16, 36, 0.08);
@@ -55,8 +62,18 @@
     &:not(:last-child){
       margin-right: 10px;
     }
+    @include mobile{
+      display: none;
+    }
   }
 
+}
+.swiper-slide{
+  width: 360px;
+
+  @include small-tablet {
+    width: 220px;
+  }
 }
 .swiper-scrollbar-drag{
   background-color: var(--dark-color);

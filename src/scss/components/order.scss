@@ -9,10 +9,12 @@
     &__container {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
+
     }
     &__left {
         padding-left: 60px;
         grid-column: 5 span;
+
     }
     &__title {
         margin: 0;
@@ -22,7 +24,6 @@
         line-height: 130%;
         color: var(--light-color);
     }
-    
     &__descr {
         margin: 0;
         font-weight: 400;
