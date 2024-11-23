@@ -10,12 +10,33 @@
         display: grid;
         grid-template-columns: repeat(12, 1fr);
 
+        @include high-tablet {
+            display: flex;
+            flex-direction: column;
+        }
     }
     &__left {
         padding-left: 60px;
         grid-column: 5 span;
 
+        @include high-tablet{
+            margin-bottom: 40px;
+            padding-left: 0;
+            text-align: center;
+        }
     }
+
+    &__right {
+        padding-right: 60px;
+        display: flex;
+        justify-content: flex-end;
+        grid-column: 7 span;
+
+        @include high-tablet{
+            padding-right: 0;
+        }
+    }
+
     &__title {
         margin: 0;
         margin-bottom: 20px;
@@ -23,6 +44,12 @@
         font-size: 36px;
         line-height: 130%;
         color: var(--light-color);
+
+        @include high-tablet{
+            font-size: 30px;
+            line-height: 140%;
+            text-align: center;
+        }
     }
     &__descr {
         margin: 0;
@@ -31,14 +58,18 @@
         line-height: 130%;
         color: var(--light-color);
     }
-    &__right {
-        padding-right: 60px;
-        display: flex;
-        justify-content: flex-end;
-        grid-column: 7 span;
-    }
+   
     &__form {
         max-width: 500px;
-    }
-}
 
+        @include high-tablet{
+            max-width: unset;
+            width: 100%;
+        }
+    }
+
+    
+}
+.order__container{
+    
+}

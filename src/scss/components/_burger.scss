@@ -1,9 +1,11 @@
 .burger{
+    display: none;
     position: relative;
     width: 44px;
     height: 44px;
     border: 2px solid rgba(255, 255, 255, 0.08);
     border-radius: 10px;
+
 
   &__line{
     position: absolute;
@@ -23,4 +25,31 @@
         transform: translateY(-50%);
     }
   }
+  @include high-tablet{
+    display: block;
+  }
+}
+
+.burger-close{
+  display: none;
+  position: absolute; 
+  top: 30px;
+  right: var(--container-offset);
+  width: 44px;
+  height: 44px;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  background-image: url(../../img/btn-close.svg);
+  font-size: 14px 12px;
+  background-position: center;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+
+  @include high-tablet{
+    display: block;
+  }
+}
+
+.burger--active{
+  display: none;
 }
